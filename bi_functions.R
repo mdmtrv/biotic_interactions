@@ -150,7 +150,8 @@ process_table_simplified = function(table, ontologies, table_id, table_content, 
       table_content = table_content,
       caption =  caption,
       table_number = table_number,
-      article_doi = article_doi
+      article_doi = article_doi,
+      processing_date = Sys.Date()
     )
 
     d$annotations = list(annotations)
@@ -261,7 +262,8 @@ process_table = function(table, ontologies, table_id, table_content, caption, ta
       table_content = table_content,
       caption =  caption,
       table_number = table_number,
-      article_doi = article_doi
+      article_doi = article_doi,
+      processing_date = Sys.Date()
     )
 
     d$annotations = list(annotations)
