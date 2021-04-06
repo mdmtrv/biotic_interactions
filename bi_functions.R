@@ -146,7 +146,7 @@ process_table_simplified = function(table, ontologies, table_id, table_content, 
   if (length(annotations) > 0){
 
     d = data.frame(
-      table_id = table_id$uri,
+      table_id = table_id,
       table_content = table_content,
       caption =  caption,
       table_number = table_number,
@@ -258,7 +258,7 @@ process_table = function(table, ontologies, table_id, table_content, caption, ta
   if (length(annotations) > 0){
 
     d = data.frame(
-      table_id = table_id$uri,
+      table_id = table_id,
       table_content = table_content,
       caption =  caption,
       table_number = table_number,
